@@ -1,15 +1,15 @@
+import java.util.ArrayList;
 public class Grado {
-    private int numeroEstudiantes=0;
-    private String[]Estudiantes=new String[numeroEstudiantes];
-    //Getters y setters
+    private ArrayList<String>Estudiantes= new ArrayList();
 
-
-    public int getNumeroEstudiantes() {
-        return numeroEstudiantes;
+    public ArrayList<String> getEstudiantes() {
+        return Estudiantes;
     }
 
-    public void setNumeroEstudiantes(int numeroEstudiantes) {
-        this.numeroEstudiantes = numeroEstudiantes;
+    public void agregarEstudiante(String estudiate) {
+        Estudiantes.add(estudiate);
     }
-
+    public void quitarEstudante(String estudiate){
+        Estudiantes.remove(estudiate);
+    }
 }
