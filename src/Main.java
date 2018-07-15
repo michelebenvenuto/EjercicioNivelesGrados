@@ -19,9 +19,11 @@ public class Main {
             int opcion= input.nextInt();
             switch (opcion){
                 case 1 :
-                System.out.print("Ingrese el nombre del Nivel:");
+                System.out.print("Ingrese el nombre del Nivel: \n");
+                String nombreNivel=input.nextLine();
                 break;
-
+                case 2:
+                System.out.print("Ingrese el nombre del Nivel");
             }
 
         }while(wantsToContiniue==true);

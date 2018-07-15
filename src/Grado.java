@@ -7,9 +7,9 @@ public class Grado {
     }
 
     public void agregarEstudiante(String estudiate) {
-        Estudiantes.add(estudiate);
+        this.Estudiantes.add(estudiate);
     }
     public void quitarEstudante(String estudiate){
-        Estudiantes.remove(estudiate);
+        this.Estudiantes.remove(estudiate);
     }
 }
