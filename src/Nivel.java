@@ -1,15 +1,21 @@
 import java.util.ArrayList;
 public class Nivel {
-    private ArrayList<Object> Grados = new ArrayList();
+    private String nombreNivel;
+    private ArrayList<Grado> Grados;
 
-    public ArrayList<Object> getGrado() {
+    public ArrayList<Grado> getGrado() {
         return Grados;
     }
 
-    public void agregarGrado(Object grado){
+    public void agregarGrado(Grado grado){
         this.Grados.add(grado);
     }
-    public void quitarGrado(String grado){
-        this.Grados.remove(grado);
+
+    public String getNombreNivel() {
+        return nombreNivel;
+    }
+    public Nivel(String nombreNivel){
+        this.nombreNivel=nombreNivel;
+        this.Grados=new ArrayList<>();
     }
 }

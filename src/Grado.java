@@ -1,15 +1,21 @@
 import java.util.ArrayList;
 public class Grado {
-    private ArrayList<String>Estudiantes= new ArrayList();
+    private String nombreGrado;
+    private ArrayList<Estudiante> Estudiantes;
 
-    public ArrayList<String> getEstudiantes() {
+    public String getNombreGrado() {
+        return nombreGrado;
+    }
+
+    public void setNombreGrado(String nombreGrado) {
+        this.nombreGrado = nombreGrado;
+    }
+
+    public ArrayList<Estudiante> getEstudiantes() {
         return Estudiantes;
     }
 
-    public void agregarEstudiante(String estudiate) {
-        this.Estudiantes.add(estudiate);
-    }
-    public void quitarEstudante(String estudiate){
-        this.Estudiantes.remove(estudiate);
+    public void agregar0Estudiantes(Estudiante estudiante) {
+        this.Estudiantes.add(estudiante);
     }
 }
